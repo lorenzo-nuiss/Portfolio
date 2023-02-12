@@ -821,24 +821,24 @@ export default function HomeNotAanim() {
                   </div>
                   <div className="container-progress-mobile">
                     <p>Html/Css + Sass</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-90"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-90"></div>
                     </div>
                     <p>Bootstrap</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-85"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-85"></div>
                     </div>
                     <p>Javascript</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-70"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-70"></div>
                     </div>
                     <p>React</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-80"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-80"></div>
                     </div>
                     <p>Svelte</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-65"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-65"></div>
                     </div>
                   </div>
                 </div>
@@ -849,24 +849,24 @@ export default function HomeNotAanim() {
                   </div>
                   <div className="container-progress-mobile">
                     <p>Html/Css + Sass</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-90"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-90"></div>
                     </div>
                     <p>Bootstrap</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-85"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-85"></div>
                     </div>
                     <p>Javascript</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-70"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-70"></div>
                     </div>
                     <p>React</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-80"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-80"></div>
                     </div>
                     <p>Svelte</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-65"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-65"></div>
                     </div>
                   </div>
                 </div>
@@ -877,24 +877,24 @@ export default function HomeNotAanim() {
                   </div>
                   <div className="container-progress-mobile">
                     <p>Html/Css + Sass</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-90"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-90"></div>
                     </div>
                     <p>Bootstrap</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-85"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-85"></div>
                     </div>
                     <p>Javascript</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-70"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-70"></div>
                     </div>
                     <p>React</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-80"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-80"></div>
                     </div>
                     <p>Svelte</p>
-                    <div class="progress-mobile">
-                      <div class="progress-value value-65"></div>
+                    <div className="progress-mobile">
+                      <div className="progress-value value-65"></div>
                     </div>
                   </div>
                 </div>

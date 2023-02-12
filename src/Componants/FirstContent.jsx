@@ -79,11 +79,6 @@ export default function FirstContent({
     }
   }, [ville]);
 
-  useEffect(() => {
-    console.log("logometo");
-    console.log(logoMeteo);
-  }, [logoMeteo]);
-
   const getMeteo2 = async () => {
     const APIKEY2 = "35f8122b6ca463975984e9cbf23bacea";
     let villeAtach = ville.replaceAll(" ", "-");
@@ -259,16 +254,6 @@ export default function FirstContent({
               <label htmlFor="ville">
                 Dans quelle ville vous situez-vous ?
               </label>
-              {/* <InputDark
-                id="input_ville"
-                name="ville"
-                type="text"
-                autoComplete="ville"
-                required
-                placeholder="Ville"
-                value={ville}
-                onChange={(e) => setVille(e.target.value)}
-              /> */}
               <InputDark
                 type="text"
                 autoComplete="off"
@@ -294,8 +279,6 @@ export default function FirstContent({
                   </option>
                 ))}
               </datalist>
-              {/* <option value="Internet Explorer">Internet Explorer</option>
-                <option value="Microsoft Edge">Microsoft Edge</option> */}
             </InputContainer>
           </InputsBlock>
           {inputValid === false ? (
