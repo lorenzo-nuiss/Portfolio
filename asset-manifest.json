@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.5c5dcb90.css",
+    "main.js": "/Portfolio/static/js/main.3d161a22.js",
+    "static/media/locavores-screen-2.png": "/Portfolio/static/media/locavores-screen-2.f57c245b7354e81ab833.png",
+    "static/media/Autoecole-screen2.png": "/Portfolio/static/media/Autoecole-screen2.2c81b8c8268d28f5de98.png",
+    "static/media/Autosignature-screen1.png": "/Portfolio/static/media/Autosignature-screen1.ee28bf61088f0bd97d6c.png",
+    "static/media/Autosignature-screen4.png": "/Portfolio/static/media/Autosignature-screen4.b3c8a41025945792fcd6.png",
+    "static/media/Autoecole-screen1.png": "/Portfolio/static/media/Autoecole-screen1.4ceac17258a0f8b5f6e9.png",
+    "static/media/Autoecole-screen3.png": "/Portfolio/static/media/Autoecole-screen3.2f492770eea0c9589ff2.png",
+    "static/media/Autosignature-screen3.png": "/Portfolio/static/media/Autosignature-screen3.a109b90c7681100598c4.png",
+    "static/media/locavores-screen1.png": "/Portfolio/static/media/locavores-screen1.dd219118cbbf3e046c75.png",
+    "static/media/logo.svg": "/Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.5c5dcb90.css.map": "/Portfolio/static/css/main.5c5dcb90.css.map",
+    "main.3d161a22.js.map": "/Portfolio/static/js/main.3d161a22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c5dcb90.css",
+    "static/js/main.3d161a22.js"
+  ]
+}
