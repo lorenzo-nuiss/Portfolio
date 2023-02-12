@@ -25,7 +25,6 @@ export default function HomeAnim() {
 
   useEffect(() => {
     if (!animateActif.get()) {
-      console.log("animation impl");
       animejsPlugins.scrollContainer({
         sectionSelector: ".section",
         wrapperSelector: ".sections",

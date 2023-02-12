@@ -54,8 +54,6 @@ export default function HomeNotAanim() {
 
     var acc = document.getElementsByClassName("faqs-title");
     var i;
-    console.log(acc[2]);
-
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", (e) => {
         e.target.classList.toggle("active");

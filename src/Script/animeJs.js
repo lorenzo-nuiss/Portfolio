@@ -179,7 +179,6 @@ export var animejsPlugins = (function (e) {
                         let mystyleScroller = document.getElementsByClassName("myStyleScroller")
 
                         if (document && y.contentEl && document.documentElement && document.body) {
-                            console.log("1er if");
                             // mystyleScroller.remove();
 
                             (window.scrollTop = 10),
@@ -217,12 +216,6 @@ export var animejsPlugins = (function (e) {
                             // Now do something with my button
                             e.style.removeProperty("opacity")
                         });
-
-
-                        console.log(y.contentEl.style);
-                        console.log(document.documentElement);
-                        console.log(document.body);
-
                     },
                 }
             );
