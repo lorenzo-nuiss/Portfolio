@@ -234,7 +234,7 @@ export default function FirstContent({
             Veuillez repondre à ces 2 questions afin que je m assure que vous
             n’êtes pas un robot.
           </ModalSubtitle>
-          <InputsBlock>
+          <InputsBlock className="inputBlock">
             <InputContainer>
               <label htmlFor="robot">
                 Combien font {robotChecker[numberArray][0]} ?

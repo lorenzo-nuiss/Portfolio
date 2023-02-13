@@ -189,16 +189,19 @@ p {
 }
 
 .light-mode .popup-content {
-  background-color: #BCCCDC;
+  background: #D9E2EC;
 }
 .light-mode .popup-content .small-txt {
-  color: #9FB3C8;
+  color: #486581;
 }
 .light-mode .popup-content h2 {
   color: #102A43;
 }
+.light-mode .popup-content label {
+  font-weight: 500;
+}
 .light-mode .popup-content input {
-  color: #243B54;
+  color: #D9E2EC;
 }
 .light-mode .text-container h3 {
   color: #102A43;
@@ -903,6 +906,33 @@ p {
 @media (min-width: 992px) {
   .option .sub p {
     width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  div.popup-content {
+    width: 85%;
+  }
+  div.popup-content .modal {
+    padding: 10px 10px;
+  }
+}
+@media (min-width: 501px) and (max-width: 1000px) {
+  div.popup-content {
+    width: clamp(350px, 70%, 800px);
+  }
+  div.popup-content .modal {
+    padding: 10px 10px;
+  }
+  div.popup-content .inputBlock {
+    align-items: end;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1500px) {
+  div.popup-content {
+    width: clamp(650px, 70%, 1000px);
+  }
+  div.popup-content .inputBlock {
+    align-items: end;
   }
 }
 .modal > .close {
