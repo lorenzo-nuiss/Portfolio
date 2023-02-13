@@ -7,13 +7,13 @@ import PageNotFound from './Componants/PageNotFound';
 function App() {
   return (
 
-    <BrowserRouter basename={process.env.PUBLIC_URL}  >
+    <HashRouter >
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/projets' element={<Projects />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
 
   );

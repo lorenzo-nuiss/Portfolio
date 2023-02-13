@@ -993,7 +993,7 @@ export default function HomeAnim() {
                   className="btn2"
                   onClick={() =>
                     (window.location.href =
-                      "https://lorenzo-nuiss.github.io/Portfolio/projets")
+                      "https://lorenzo-nuiss.github.io/Portfolio/#/projets")
                   }
                 >
                   Voir tous mes projets
