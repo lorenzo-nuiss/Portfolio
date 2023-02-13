@@ -7,15 +7,11 @@ import PageNotFound from './Componants/PageNotFound';
 
 function App() {
   return (
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projets' element={<Projects />} />
-        <Route path='*' element={<PageNotFound />} />
-      </Routes>
-    </HashRouter>
-
-
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/projets' element={<Projects />} />
+      <Route path='*' element={<PageNotFound />} />
+    </Routes>
   );
 }
 
