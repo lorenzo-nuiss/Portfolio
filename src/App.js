@@ -9,7 +9,7 @@ function App() {
 
     <BrowserRouter basename={process.env.PUBLIC_URL}  >
       <Routes>
-        <Route index path='/' element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         <Route path='/projets' element={<Projects />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
