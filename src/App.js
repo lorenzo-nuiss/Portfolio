@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/Portfolio' element={<Home />} />
         <Route path='/Portfolio/projets' element={<Projects />} />
+        <Route path='/projets' element={<Projects />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 
