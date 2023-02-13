@@ -11,9 +11,8 @@ function App() {
     <BrowserRouter>
 
       <Routes>
-        <Route path='/' element={<Home />} />
         <Route path='/Portfolio' element={<Home />} />
-        <Route path='/projets' element={<Projects />} />
+        <Route path='/Portfolio/projets' element={<Projects />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
 

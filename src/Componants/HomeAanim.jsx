@@ -984,7 +984,7 @@ export default function HomeAnim() {
               <div className="containerBtnProjets">
                 <button
                   className="btn2"
-                  onClick={() => (window.location.href = "/projets")}
+                  onClick={() => (window.location.href = "/Portfolio/projets")}
                 >
                   Voir tous mes projets
                 </button>
