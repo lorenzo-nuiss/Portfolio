@@ -989,15 +989,13 @@ export default function HomeAnim() {
                 </div>
               </div>
               <div className="containerBtnProjets">
-                <button
+                <a
+                  href="https://lorenzo-nuiss.github.io/Portfolio/#/projets"
+                  target="_blank"
                   className="btn2"
-                  onClick={() =>
-                    (window.location.href =
-                      "https://lorenzo-nuiss.github.io/Portfolio/#/projets")
-                  }
                 >
                   Voir tous mes projets
-                </button>
+                </a>
               </div>
             </section>
           </div>
