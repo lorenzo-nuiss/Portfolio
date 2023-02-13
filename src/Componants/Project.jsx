@@ -20,6 +20,12 @@ export default function Projects() {
   }
 
   useEffect(() => {
+    return () => {
+      // code to clean up effects and subscriptions
+    };
+  }, []);
+
+  useEffect(() => {
     if (!isEmpty(state) && loadImg === 0) {
       setTabProject(state);
       setLoadimg(1);

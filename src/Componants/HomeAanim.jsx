@@ -19,9 +19,16 @@ import screenAutosign3 from "../Images/Autosignature-screen3.png";
 import screenAuto1 from "../Images/Autoecole-screen1.png";
 import screenAuto2 from "../Images/Autoecole-screen2.png";
 import screenAuto3 from "../Images/Autoecole-screen3.png";
+import { Link } from "react-router-dom";
 
 export default function HomeAnim() {
   // const state = useStore(animateActif)
+
+  function refreshPage() {
+    setTimeout(() => {
+      window.location.reload(false);
+    }, 100);
+  }
 
   useEffect(() => {
     if (!animateActif.get()) {
@@ -984,7 +991,10 @@ export default function HomeAnim() {
               <div className="containerBtnProjets">
                 <button
                   className="btn2"
-                  onClick={() => (window.location.href = "#/projets")}
+                  onClick={() =>
+                    (window.location.href =
+                      "https://lorenzo-nuiss.github.io/Portfolio/projets")
+                  }
                 >
                   Voir tous mes projets
                 </button>
