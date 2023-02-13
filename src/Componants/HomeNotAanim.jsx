@@ -51,13 +51,14 @@ export default function HomeNotAanim() {
         panel.classList.remove("active");
       });
     }
+    console.log(" initialise");
 
     var acc = document.getElementsByClassName("faqs-title");
     var i;
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
+        console.log(" un click");
         this.classList.toggle("active");
-        console.log("click on ");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
