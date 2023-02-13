@@ -975,7 +975,7 @@ export default function HomeNotAanim() {
                 </div>
               </div>
               <div className="containerBtnProjets">
-                <Link to={"/projets"} className="btn2">
+                <Link to={"#/projets"} className="btn2">
                   Voir tous mes projets
                 </Link>
               </div>
