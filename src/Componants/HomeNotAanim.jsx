@@ -57,6 +57,7 @@ export default function HomeNotAanim() {
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
+        console.log("click on ");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
