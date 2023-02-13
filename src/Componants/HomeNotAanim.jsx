@@ -19,6 +19,7 @@ import screenAutosign3 from "../Images/Autosignature-screen3.png";
 import screenAuto1 from "../Images/Autoecole-screen1.png";
 import screenAuto2 from "../Images/Autoecole-screen2.png";
 import screenAuto3 from "../Images/Autoecole-screen3.png";
+import { Link } from "react-router-dom";
 
 export default function HomeNotAanim() {
   const [stateLoad, setStateLoad] = useState();
@@ -974,12 +975,9 @@ export default function HomeNotAanim() {
                 </div>
               </div>
               <div className="containerBtnProjets">
-                <button
-                  className="btn2"
-                  onClick={() => (window.location.href = "/Portfolio/projets")}
-                >
+                <Link to={"/projets"} className="btn2">
                   Voir tous mes projets
-                </button>
+                </Link>
               </div>
             </section>
           </div>

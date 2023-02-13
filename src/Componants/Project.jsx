@@ -70,7 +70,7 @@ export default function Projects() {
   }
   return (
     <>
-      <Link to="/Portfolio" id="btnHome">
+      <Link to="/" id="btnHome">
         <InputIcon className="fa-solid fa-house" />
       </Link>
       <nav className="navbar">
