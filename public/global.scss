@@ -243,63 +243,88 @@ font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
 .faqs-grid{
 	display: none;
 }
+.faqs{
+	display: none;
+}
 
 // ----------------------------------- commentaire
 
+.light-mode{
+	.faqs{
 
+		.faq {
+			background: $color-white;
+			.faq-question {
+				font-weight: 800;
+
+		}
+		.faq-answer p{
+			color: $color-black2;
+		}
+		}
+	}
+
+}
 .faqs {
-	width: 100%;
-	max-width: 768px;
-	margin: 0 auto;
-	padding: 15px;
-  }
-  
-  .faqs .faq {
-	margin: 15px;
-	padding: 15px;
-	background: #fff;
+	width: 96%;
+	margin: auto;
+
+	.faq {
+	margin: 18px 0;
+	padding: 18px 22px;
+	background: #242228;
 	border-radius: 10px;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faqs .faq .faq-question {
-	position: relative;
-	font-size: 20px;
-	padding-right: 80px;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 	transition: all 0.4s ease;
+}
+ .faq .faq-question {
+	position: relative;
+	transition: all 0.3s ease;
+	font-size: 1.2rem;
+	font-weight: 700;
+
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	letter-spacing: 3px;
   }
   
-  .faqs .faq .faq-question::after {
+   .faq .faq-question::after {
 	content: "+";
-	position: absolute;
-	top: 50%;
-	right: 0px;
-	transform: translateY(-50%);
 	width: 30px;
 	height: 30px;
-	transition: all 0.2s ease;
-  }
-  
-  .faqs .faq .faq-answer {
-	opacity: 0;
-	max-height: 0;
-	overflow: hidden;
-	transition: all 0.2s ease;
-  }
-  
-  .faqs .faq.open .faq-question {
-	margin-bottom: 15px;
-  }
-  
-  .faqs .faq.open .faq-question::after {
-	content: "-";
-  }
-  
-  .faqs .faq.open .faq-answer {
-	max-height: 1000px;
-	opacity: 1;
-  }
+	transition: all 0.4s ease;
+    line-height: 0.9;
+    font-size: 31px;
+	font-weight: 500;
+}
 
+ .faq .faq-answer {
+	 opacity: 0;
+	 max-height: 0;
+	 overflow: hidden;
+	 transition: all 0.4s ease;
+	}
+	
+	.faq.open .faq-question {
+		margin-bottom: 15px;
+	}
+	
+	.faq.open .faq-question::after {
+		content: "-";
+	}
+	
+ .faq.open .faq-answer {
+		max-height: 1000px;
+		opacity: 1;
+		padding: 0px 5px;
+		color: $color-white1;
+	}
+	.faq.open .faq-answer p {
+		font-family: "Comfortaa", "Inter", serif;
+	}
+	
+}
   
 // -----------------------------------
 .section-card {
@@ -973,6 +998,12 @@ overflow: hidden;
 
 
 
+
+@media (max-width: 760px) {
+	.faqs {
+		display: block;
+	}
+}
 
 @media (max-width: 760px) {
 	.faqs-grid {

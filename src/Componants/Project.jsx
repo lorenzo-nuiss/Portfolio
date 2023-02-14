@@ -68,20 +68,45 @@ export default function Projects() {
 
   const [faqs, setFaqs] = useState([
     {
-      question: "How many programmers does it take to screw a lightbulb?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+      question: "2023",
+      answer: `Lorem ipsum dolor sit amet, co massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
       open: true,
     },
     {
-      question: "Who is the most awesome person?",
+      question: "2022",
       answer: "You! The viewer!",
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
       open: false,
     },
     {
-      question:
-        "How many questions does it take to makes a succesful FAQ Page?",
+      question: "2021",
       answer: "This many!",
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      open: false,
+    },
+    {
+      question: "2020",
+      answer: "This many!",
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      open: false,
+    },
+    {
+      question: "2019",
+      answer: "This many!",
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      open: false,
+    },
+    {
+      question: "2018",
+      answer: "This many!",
+      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
       open: false,
     },
   ]);
@@ -140,12 +165,6 @@ export default function Projects() {
         ) : (
           <div className="loader-animation"></div>
         )}
-
-        <div className="faqs">
-          {faqs.map((faq, index) => (
-            <FAQ faq={faq} index={index} key={index} toggleFAQ={toggleFAQ} />
-          ))}
-        </div>
       </main>
     </>
   );
