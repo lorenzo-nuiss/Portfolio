@@ -1228,10 +1228,12 @@ datalist {
 				  }		  
 	}
 }
+.splide__slide {
+	aspect-ratio: 2 / 1;
+}
 
 @media (min-width: 767px){
 	.splide__slide {
-		max-height: 581px;
 		overflow: auto;
 		border-radius: 8px 0 0 8px
 	}
