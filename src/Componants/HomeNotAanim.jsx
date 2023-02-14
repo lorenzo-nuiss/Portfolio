@@ -64,8 +64,11 @@ export default function HomeNotAanim() {
         console.log(panel);
         console.log(typeof panel);
         if (panel.style.maxHeight) {
+          console.log("le if");
           panel.style.maxHeight = null;
         } else {
+          console.log("le else");
+          console.log(panel.scrollHeight);
           panel.style.maxHeight = panel.scrollHeight + "px";
         }
       });
