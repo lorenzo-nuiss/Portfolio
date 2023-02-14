@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 const FAQ = ({ faq, index, toggleFAQ }) => {
   return (
@@ -12,36 +12,32 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
         <p>
           {faq.answer}
           <br />
-          <br />
           {faq.answer2}
-          <br />
           <br />
           {faq.answer3}
         </p>
-        <br />
         {faq.part1Title ? (
           <p>
-            <br />
             <span>{faq.part1Title}</span>
             {faq.part1Array.map((arr, i) => (
-              <>
-                <br key={index + "" + i} />
+              <Fragment key={index + "" + i}>
+                <br />
                 {arr}
-              </>
+              </Fragment>
             ))}
           </p>
         ) : (
           ""
         )}
+        <br />
         {faq.part2Title ? (
           <p>
-            <br />
             <span>{faq.part2Title}</span>
-            {faq.part2Array.map((arr, index) => (
-              <>
+            {faq.part2Array.map((arr, i) => (
+              <Fragment key={index + "" + i}>
                 <br />
                 {arr}
-              </>
+              </Fragment>
             ))}
           </p>
         ) : (
