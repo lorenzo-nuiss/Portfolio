@@ -320,8 +320,12 @@ font-family: 'Montserrat', 'Plus Jakarta Sans', sans-serif;
 		padding: 0px 5px;
 		color: $color-white1;
 	}
+	.faq.open .faq-answer span {
+		font-weight: 700;
+	}
 	.faq.open .faq-answer p {
-		font-family: "Comfortaa", "Inter", serif;
+		font-size: 14px;
+		font-family: "Montserrat", "Inter", serif;
 	}
 	
 }

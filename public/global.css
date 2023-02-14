@@ -283,8 +283,12 @@ p {
   padding: 0px 5px;
   color: #BCCCDC;
 }
+.faqs .faq.open .faq-answer span {
+  font-weight: 700;
+}
 .faqs .faq.open .faq-answer p {
-  font-family: "Comfortaa", "Inter", serif;
+  font-size: 14px;
+  font-family: "Montserrat", "Inter", serif;
 }
 
 .section-card {

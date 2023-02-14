@@ -19,6 +19,7 @@ import screenAutosign3 from "../Images/Autosignature-screen3.png";
 import screenAuto1 from "../Images/Autoecole-screen1.png";
 import screenAuto2 from "../Images/Autoecole-screen2.png";
 import screenAuto3 from "../Images/Autoecole-screen3.png";
+import FAQ from "./FAQ";
 
 export default function HomeAnim() {
   // const state = useStore(animateActif)
@@ -100,6 +101,137 @@ export default function HomeAnim() {
       });
     }
   }, []);
+
+  const [faqs, setFaqs] = useState([
+    {
+      question: "2023",
+      answer: `Je fais ma dernière année en alternance, si tout ce passe bien, je décroche mon diplôme niveau bac +4`,
+      answer2: `J'ai déjà pu réaliser ce site, fais en React et avec
+                        Firebase pour la base de données présente dans la page
+                        "Projets".`,
+      answer3: `j'ai aussi réalisé un projet en react native en cours`,
+      open: true,
+    },
+    {
+      question: "2022",
+      answer:
+        "Je rentre en alternance pour le diplome de concepteur d'application multimédia chez Doranco niveau bac+4 qui se termine en 2023",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Application en React, Node.js Mongo DB en base de donnée",
+        "Application Svelte et Sveltekit Mongo DB en base de donnée",
+        "Création de plusieurs sites Wordpress",
+        "Conception de chartes graphiques et de maquettes",
+        "Déploiement sur serveur nginx",
+      ],
+      part2Title: "À  l'ecole : ",
+      part2Array: [
+        "Principes de conception de bases de données",
+        "Java : middleware, persistance des données avec hibernate, Web Services SOAP et REST",
+        "Cours et projet en React.js",
+        "Développement Android Java",
+        "Cours de React Native",
+      ],
+      open: false,
+    },
+    {
+      question: "2021",
+      answer: "En alternance de 2020 à 2021 ",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Réalisations de cahier des charges",
+        "Gestion de projet",
+        " Créations de sites web wordpress (divi et elementor)",
+        "Conception de chartes graphiques et de maquettes",
+      ],
+      part2Title: "À  l'ecole : ",
+      part2Array: [
+        "Principes de conception de bases de données",
+        "Design de site (UX/UI)",
+        "SEO",
+        "Mysql",
+        "Javascript et Jquery",
+        "Cours + projets en Symfony",
+      ],
+      open: false,
+    },
+    {
+      question: "2020",
+      answer:
+        "En alternance de 2020 à 2021 pour la formation developpeur d'application multimédia bac +2",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Chef de projet pour des applications",
+        "Amélioration du site de l'entreprise",
+        "rédaction de contenu",
+      ],
+      part2Title: "À  l'ecole : ",
+      part2Array: [
+        "Analyse et conception UML",
+        "Design patterns et architectures applicatives",
+        "Base de données SQL",
+        "Gestion de projets ( Méthodes Agiles, Scrum,... )",
+        "Développement logiciel Java",
+        "HTML / CSS, Scss",
+        "Bootstrap",
+      ],
+      open: false,
+    },
+    {
+      question: "2019",
+      answer: `je travaille en tant qu'intérimaire pendant plusieurs mois. Cette expérience
+      m'a donné une bonne compréhension du monde professionnel et m'a permis de développer mes compétences en matière
+      de travail en équipe et de communication.`,
+      answer2: `Après cela, j'ai suivi une formation de 2 mois pour
+      apprendre les bases du web et de l'informatique. Cette
+      formation m'a fourni les connaissances nécessaires pour
+      comprendre les technologies modernes et pour développer
+      ma culture informatique.`,
+      answer3: `Ensuite, j'ai continué à me former en autodidacte en
+      suivant des cours en ligne, en regardant des vidéos et
+      en créant mon premier site web en utilisant HTML et CSS.`,
+      open: false,
+    },
+    {
+      question: "2018 et avant",
+      answer: `En 2015 j'obtiens mon bac STMG (Baccalauréat sciences et
+        technologies du management et de la gestion) spécialité
+        marketing.`,
+      answer2: `Je souhaitais poursuivre mes études en faisant un BTS
+      MUC en alternance mais je me rends compte que ce n'est
+      pas ce qui me plaît, je décide de faire quelques jobs
+      comme (équipier polyvalent, adjoint technique, street
+      marketing, etc…) en ayant toujours en tête une reprise
+      d'études.`,
+      answer3: ` Afin d'être sûr de me diriger dans la bonne branche,
+      j'ai fait un POP (parcours d'orientation personnalisé) à
+      la Mission locale. Le bilan de mes compétences m'a aidé à construire mon
+      projet professionnel et me conforte dans le choix du
+      métier de développeur.`,
+      open: false,
+    },
+  ]);
+
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
+
   return (
     <>
       <main>
@@ -143,209 +275,15 @@ export default function HomeAnim() {
                 <span className="background-txt">Experiences</span>
               </div>
 
-              <div className="faqs-grid">
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2023
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        Bon pour l'instant cette partie n'est pas très remplie,
-                        mais à la fin de l'année cette section débordera !
-                        <br />
-                        Cette année j'ai réalisé ce site, fais en React et avec
-                        Firebase pour la base de données présente dans la page
-                        "Projet".
-                        <br />
-                        <span>
-                          <br />A l'ecole:
-                        </span>
-                        <br />
-                        Utilisation de firebase
-                        <br />
-                        Projet React Native
-                        <br />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2022
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        <span>En entreprise :</span>
-                        <br />
-                        Application en React, Node.js Mongo DB en base de donnée
-                        <br />
-                        Application Svelte et Sveltekit Mongo DB en base de
-                        donnée
-                        <br />
-                        Création de plusieurs sites Wordpress
-                        <br />
-                        Conception de chartes graphiques et de maquettes
-                        <br />
-                        Déploiement sur serveur nginx
-                        <br />
-                        <br />
-                        <br />
-                        <span>A l'ecole:</span>
-                        <br />
-                        Principes de conception de bases de données
-                        <br />
-                        Java : middleware, persistance des données avec
-                        hibernate, Web Services SOAP et REST
-                        <br />
-                        Cours et projet en React.js
-                        <br />
-                        Développement Android Java
-                        <br />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2021
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        <span>En entreprise :</span>
-                        <br />
-                        Réalisations de cahier des charges
-                        <br />
-                        Gestion de projet
-                        <br />
-                        Créations de sites web wordpress (divi et elementor)
-                        <br />
-                        Conception de chartes graphiques et maquettages figma
-                        <br />
-                      </p>
-                      <br />
-                      <p>
-                        <span>A l'ecole:</span>
-                        <br />
-                        Principes de conception de bases de données
-                        <br />
-                        Design de site (UX/UI)
-                        <br />
-                        SEO
-                        <br />
-                        Mysql
-                        <br />
-                        Javascript et Jquery
-                        <br />
-                        Cours + projets en Symfony
-                        <br />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2020
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        Je travaille en tant qu'opérateur de production et mes
-                        tâches incluent le traitement informatique des commandes
-                        et la gestion des stocks à l'aide de différents
-                        logiciels.
-                        <br />
-                      </p>
-                      <p>
-                        <br />
-                        <span>À l'ecole:</span>
-                        <br />
-                        Analyse et conception UML
-                        <br />
-                        Design patterns et architectures applicatives
-                        <br />
-                        Méthodes Agiles
-                        <br />
-                        Gestion de projets ( Méthodes Agiles, Scrum,... )
-                        <br />
-                        Base de données SQL
-                        <br />
-                        Développement logiciel Java
-                        <br />
-                        HTML / CSS, Scss et Bootstrap
-                        <br />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2019
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        Au cours de ma carrière, j'ai travaillé en tant
-                        qu'intérimaire pendant plusieurs mois. Cette expérience
-                        m'a donné une bonne compréhension du monde professionnel
-                        et m'a permis de développer mes compétences en matière
-                        de travail en équipe et de communication. <br />
-                        <br />
-                        Après cela, j'ai suivi une formation de 2 mois pour
-                        apprendre les bases du web et de l'informatique. Cette
-                        formation m'a fourni les connaissances nécessaires pour
-                        comprendre les technologies modernes et pour développer
-                        ma culture informatique. <br />
-                        <br />
-                        Enfin, j'ai continué à me former en autodidacte en
-                        suivant des cours en ligne, en regardant des vidéos et
-                        en créant mon premier site web en utilisant HTML et CSS.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="faqs-item ">
-                  <a className="faqs-title" href="#custom">
-                    2018 et avant
-                  </a>
-
-                  <div className="faqs-content">
-                    <div className="faqs-content-inside">
-                      <p>
-                        En 2015 j'obtiens mon bac STMG (Baccalauréat sciences et
-                        technologies du management et de la gestion) spécialité
-                        marketing.
-                        <br />
-                        Je souhaitais poursuivre mes études en faisant un BTS
-                        MUC en alternance mais je me rends compte que ce n'est
-                        pas ce qui me plaît, je décide de faire quelques jobs
-                        comme (équipier polyvalent, adjoint technique, street
-                        marketing, etc…) en ayant toujours en tête une reprise
-                        d'études.
-                        <br />
-                        Afin d'être sûr de me diriger dans la bonne branche,
-                        j'ai fait un POP (parcours d'orientation personnalisé) à
-                        la Mission locale.
-                        <br />
-                        <br />
-                        Le bilan de mes compétences m'a aidé à construire mon
-                        projet professionnel et me conforte dans le choix du
-                        métier de développeur.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              <div className="faqs">
+                {faqs.map((faq, index) => (
+                  <FAQ
+                    faq={faq}
+                    index={index}
+                    key={index}
+                    toggleFAQ={toggleFAQ}
+                  />
+                ))}
               </div>
               <div className="options">
                 <div className="option active">
@@ -367,7 +305,7 @@ export default function HomeAnim() {
                           page "Projet".
                           <br />
                           <span>
-                            <br />A l'ecole:
+                            <br />À l'ecole:
                           </span>
                           <br />
                           Utilisation de firebase
@@ -405,7 +343,7 @@ export default function HomeAnim() {
                           <br />
                           <br />
                           <br />
-                          <span>A l'ecole:</span>
+                          <span>À l'ecole:</span>
                           <br />
                           Principes de conception de bases de données
                           <br />
@@ -444,7 +382,7 @@ export default function HomeAnim() {
                         </p>
                         <br />
                         <p>
-                          <span>A l'ecole:</span>
+                          <span>À l'ecole:</span>
                           <br />
                           Principes de conception de bases de données
                           <br />

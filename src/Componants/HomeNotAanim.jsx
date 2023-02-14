@@ -72,44 +72,115 @@ export default function HomeNotAanim() {
   const [faqs, setFaqs] = useState([
     {
       question: "2023",
-      answer: `Lorem ipsum dolor sit amet, co massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer: `Je fais ma dernière année en alternance, si tout ce passe bien, je décroche mon diplôme niveau bac +4.`,
+      answer2: `J'ai déjà pu réaliser ce site, fais en React et avec
+                        Firebase pour la base de données présente dans la page
+                        "Projets".`,
+      answer3: `j'ai aussi réalisé un projet en react native en cours.`,
       open: true,
     },
     {
       question: "2022",
-      answer: "You! The viewer!",
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer:
+        "Je rentre en alternance pour le diplome de concepteur d'application multimédia chez Doranco niveau bac+4 qui se termine en 2023.",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Application en React, Node.js Mongo DB en base de donnée",
+        "Application Svelte et Sveltekit Mongo DB en base de donnée",
+        "Création de plusieurs sites Wordpress",
+        "Conception de chartes graphiques et de maquettes",
+        "Déploiement sur serveur nginx",
+      ],
+      part2Title: "À l'ecole : ",
+      part2Array: [
+        "Principes de conception de bases de données",
+        "Java : middleware, persistance des données avec hibernate, Web Services SOAP et REST",
+        "Cours et projet en React.js",
+        "Développement Android Java",
+        "Cours de React Native",
+      ],
       open: false,
     },
     {
       question: "2021",
-      answer: "This many!",
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer: "En alternance de 2020 à 2021.",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Réalisations de cahier des charges",
+        "Gestion de projet",
+        " Créations de sites web wordpress (divi et elementor)",
+        "Conception de chartes graphiques et de maquettes",
+      ],
+      part2Title: "À l'ecole : ",
+      part2Array: [
+        "Principes de conception de bases de données",
+        "Design de site (UX/UI)",
+        "SEO",
+        "Mysql",
+        "Javascript et Jquery",
+        "Cours + projets en Symfony",
+      ],
       open: false,
     },
     {
       question: "2020",
-      answer: "This many!",
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer:
+        "En alternance de 2020 à 2021 pour la formation developpeur d'application multimédia bac +2.",
+      answer2: null,
+      answer3: null,
+      part1Title: "En entreprise : ",
+      part1Array: [
+        "Chef de projet pour des applications",
+        "Amélioration du site de l'entreprise",
+        "rédaction de contenu",
+      ],
+      part2Title: "À l'ecole : ",
+      part2Array: [
+        "Analyse et conception UML",
+        "Design patterns et architectures applicatives",
+        "Base de données SQL",
+        "Gestion de projets ( Méthodes Agiles, Scrum,... )",
+        "Développement logiciel Java",
+        "HTML / CSS, Scss",
+        "Bootstrap",
+      ],
       open: false,
     },
     {
       question: "2019",
-      answer: "This many!",
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      answer: `je travaille en tant qu'intérimaire pendant plusieurs mois. Cette expérience
+      m'a donné une bonne compréhension du monde professionnel et m'a permis de développer mes compétences en matière
+      de travail en équipe et de communication.`,
+      answer2: `Après cela, j'ai suivi une formation de 2 mois pour
+      apprendre les bases du web et de l'informatique. Cette
+      formation m'a fourni les connaissances nécessaires pour
+      comprendre les technologies modernes et pour développer
+      ma culture informatique.`,
+      answer3: `Ensuite, j'ai continué à me former en autodidacte en
+      suivant des cours en ligne, en regardant des vidéos et
+      en créant mon premier site web en utilisant HTML et CSS.`,
       open: false,
     },
     {
-      question: "2018",
-      answer: "This many!",
-      answer2: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
-      answer3: `Lorem i ligula quis nisl. Ut et ex dui. Integer id venenatis quam.`,
+      question: "2018 et avant",
+      answer: `En 2015 j'obtiens mon bac STMG (Baccalauréat sciences et
+        technologies du management et de la gestion) spécialité
+        marketing.`,
+      answer2: `Je souhaitais poursuivre mes études en faisant un BTS
+      MUC en alternance mais je me rends compte que ce n'est
+      pas ce qui me plaît, je décide de faire quelques jobs
+      comme (équipier polyvalent, adjoint technique, street
+      marketing, etc…) en ayant toujours en tête une reprise
+      d'études.`,
+      answer3: ` Afin d'être sûr de me diriger dans la bonne branche,
+      j'ai fait un POP (parcours d'orientation personnalisé) à
+      la Mission locale. Le bilan de mes compétences m'a aidé à construire mon
+      projet professionnel et me conforte dans le choix du
+      métier de développeur.`,
       open: false,
     },
   ]);
@@ -197,7 +268,8 @@ export default function HomeNotAanim() {
                           l'année cette section debordera !
                           <br />
                           <span>
-                            <br />A l'ecole:
+                            <br />
+                            Àl'ecole:
                           </span>
                           <br />
                           Utilisation de firebase
@@ -235,7 +307,7 @@ export default function HomeNotAanim() {
                           Déploiement sur serveur nginx
                           <br />
                           <br />
-                          <span>A l'ecole:</span>
+                          <span>Àl'ecole:</span>
                           <br />
                           Principes de conception de bases de données
                           <br />
@@ -274,7 +346,7 @@ export default function HomeNotAanim() {
                         </p>
                         <br />
                         <p>
-                          <span>A l'ecole:</span>
+                          <span>Àl'ecole:</span>
                           <br />
                           Principes de conception de bases de données
                           <br />
