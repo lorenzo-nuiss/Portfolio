@@ -1128,14 +1128,10 @@ option:hover, .active {
 
 .splide__slide {
   aspect-ratio: 2/1;
+  overflow: auto;
+  border-radius: 8px 0 0 8px;
 }
 
-@media (min-width: 767px) {
-  .splide__slide {
-    overflow: auto;
-    border-radius: 8px 0 0 8px;
-  }
-}
 @media (max-width: 766px) {
   .wrapper div.wrapper-altern {
     grid-template-columns: 1fr;

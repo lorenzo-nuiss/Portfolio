@@ -198,8 +198,8 @@ export default function FirstContent({
   let styleImg = {
     position: "absolute",
     borderRadius: "50%",
-    top: "2px",
-    width: "80px",
+    top: "-2px",
+    width: "70px",
     right: "10px",
     opacity: "0.6",
     filter: "grayscale(10%)",
