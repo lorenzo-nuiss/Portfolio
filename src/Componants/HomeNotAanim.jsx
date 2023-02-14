@@ -62,7 +62,7 @@ export default function HomeNotAanim() {
         if (panel2.style.maxHeight) {
           panel2.style.maxHeight = null;
         } else {
-          panel2.style.maxHeight = panel2.scrollHeight + "px";
+          panel2.style.maxHeight = panel2.scrollHeight + 500 + "px";
         }
       });
     }
