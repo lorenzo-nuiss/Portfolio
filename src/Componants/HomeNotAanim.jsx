@@ -51,25 +51,18 @@ export default function HomeNotAanim() {
         panel.classList.remove("active");
       });
     }
-    console.log(" -initialise- ");
 
     var acc = document.getElementsByClassName("faqs-title");
     var i;
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
-        console.log(" un click 2");
-        console.log(this);
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        console.log(panel);
-        console.log(typeof panel);
-        if (panel.style.maxHeight) {
-          console.log("le if");
-          panel.style.maxHeight = null;
+        var panel2 = this.nextElementSibling;
+
+        if (panel2.style.maxHeight) {
+          panel2.style.maxHeight = null;
         } else {
-          console.log("le else");
-          console.log(panel.scrollHeight);
-          panel.style.maxHeight = panel.scrollHeight + "px";
+          panel2.style.maxHeight = panel2.scrollHeight + "px";
         }
       });
     }
