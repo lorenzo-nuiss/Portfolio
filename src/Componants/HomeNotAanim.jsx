@@ -51,17 +51,18 @@ export default function HomeNotAanim() {
         panel.classList.remove("active");
       });
     }
-    console.log(" initialise");
+    console.log(" -initialise- ");
 
     var acc = document.getElementsByClassName("faqs-title");
     var i;
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
-        console.log(" un click");
+        console.log(" un click 2");
         console.log(this);
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         console.log(panel);
+        console.log(typeof panel);
         if (panel.style.maxHeight) {
           panel.style.maxHeight = null;
         } else {
