@@ -1,24 +1,17 @@
-// import animejsPlugins from "../Script/animeJs";
-import anime from "animejs/lib/anime.es.js";
 // Default theme
 import "@splidejs/splide/css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { animejsPlugins } from "../Script/animeJs";
 // or only core styles
 import "@splidejs/splide/css/core";
 import { useEffect, useState } from "react";
 import { animateActif } from "../Store/Anim";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import { Player } from "@lottiefiles/react-lottie-player";
 import ModalContact from "./ModalContact";
 import screenLocavores1 from "../Images/locavores-screen1.png";
 import screenLocavores2 from "../Images/locavores-screen-2.png";
 import screenAutosign1 from "../Images/Autosignature-screen1.png";
 import screenAutosign2 from "../Images/Autosignature-screen4.png";
 import screenAutosign3 from "../Images/Autosignature-screen3.png";
-
-import screenAuto1 from "../Images/Autoecole-screen1.png";
-import screenAuto2 from "../Images/Autoecole-screen2.png";
-import screenAuto3 from "../Images/Autoecole-screen3.png";
 import FAQ from "./FAQ";
 
 export default function HomeNotAanim() {

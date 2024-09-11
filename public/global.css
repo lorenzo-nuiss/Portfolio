@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
-  color: #D9E2EC;
-  background-color: #1E2025;
+  color: #d9e2ec;
+  background-color: #1e2025;
   transition: 1s;
   margin: auto;
 }
@@ -10,13 +10,14 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-button, .btn1 {
+button,
+.btn1 {
   font-family: "Montserrat", sans-serif;
 }
 
 .light-mode {
   background-color: #ffffff;
-  color: #1E2025;
+  color: #1e2025;
 }
 
 .xs-txt {
@@ -47,7 +48,7 @@ p {
 }
 
 .txt-black {
-  color: #1E2025;
+  color: #1e2025;
 }
 
 .switch {
@@ -76,12 +77,12 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #334E68;
+  background: #334e68;
   border-radius: 20px;
 }
 
 .switch input:checked + span {
-  background: #9FB3C8;
+  background: #9fb3c8;
 }
 
 .switch input + span:before {
@@ -92,7 +93,7 @@ p {
   left: 2.6px;
   width: 21.3px;
   height: 21.3px;
-  background: #D9E2EC;
+  background: #d9e2ec;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
@@ -100,7 +101,7 @@ p {
 
 .switch input:checked + span:before {
   left: 22.6px;
-  background: #102A43;
+  background: #102a43;
 }
 
 .light-mode img {
@@ -121,27 +122,27 @@ p {
 
 .banner .text-container h3 {
   margin: 20px 0;
-  color: #BCCCDC;
+  color: #bcccdc;
   font-weight: 500;
 }
 .banner .text-container h1 {
   margin: 20px 0;
 }
 .banner .text-container h1 span {
-  color: #C2AFF0;
+  color: #c2aff0;
 }
 .banner .text-container h2 {
   margin: 20px 0;
   font-weight: 500;
-  color: #BCCCDC;
+  color: #bcccdc;
   line-height: 1.4;
 }
 
 .btn1 {
   font-size: 16px;
-  color: #1E2025;
-  background-color: #C2AFF0;
-  border: 2px solid #C2AFF0;
+  color: #1e2025;
+  background-color: #c2aff0;
+  border: 2px solid #c2aff0;
   border-radius: 8px;
   padding: 14px 28px;
   cursor: pointer;
@@ -149,17 +150,17 @@ p {
   margin: 10px 0;
 }
 .btn1 :hover {
-  background-color: #1E2025;
-  color: #C2AFF0;
+  background-color: #1e2025;
+  color: #c2aff0;
   transition: all 0.3s;
 }
 
 .btn2 {
   font-size: 16px;
   text-decoration: none;
-  color: #C2AFF0;
+  color: #c2aff0;
   background-color: transparent;
-  border: 3px solid #C2AFF0;
+  border: 3px solid #c2aff0;
   border-radius: 8px;
   padding: 14px 28px;
   cursor: pointer;
@@ -173,7 +174,7 @@ p {
 
 .btn3 {
   font-size: 16px;
-  color: #D9E2EC;
+  color: #d9e2ec;
   background-color: rgb(48, 63, 159);
   border: 2px solid rgb(48, 63, 159);
   border-radius: 8px;
@@ -183,34 +184,34 @@ p {
   margin: 10px 0;
 }
 .btn3 :hover {
-  background-color: #1E2025;
+  background-color: #1e2025;
   color: rgb(48, 63, 159);
   transition: all 0.3s;
 }
 
 .light-mode .popup-content {
-  background: #D9E2EC;
+  background: #d9e2ec;
 }
 .light-mode .popup-content .small-txt {
   color: #486581;
 }
 .light-mode .popup-content h2 {
-  color: #102A43;
+  color: #102a43;
 }
 .light-mode .popup-content label {
   font-weight: 500;
 }
 .light-mode .popup-content input {
-  color: #D9E2EC;
+  color: #d9e2ec;
 }
 .light-mode .text-container h3 {
-  color: #102A43;
+  color: #102a43;
 }
 .light-mode .text-container h1 span {
-  color: #C2AFF0;
+  color: #c2aff0;
 }
 .light-mode .text-container h2 {
-  color: #102A43;
+  color: #102a43;
 }
 .light-mode #wrapperIdProjet .text-container-projet p {
   color: #486581;
@@ -225,13 +226,13 @@ p {
 }
 
 .light-mode .faqs .faq {
-  background: #D9E2EC;
+  background: #d9e2ec;
 }
 .light-mode .faqs .faq .faq-question {
   font-weight: 800;
 }
 .light-mode .faqs .faq .faq-answer p {
-  color: #243B54;
+  color: #243b54;
 }
 
 .faqs {
@@ -281,7 +282,7 @@ p {
   max-height: 1000px;
   opacity: 1;
   padding: 0px 5px;
-  color: #BCCCDC;
+  color: #bcccdc;
 }
 .faqs .faq.open .faq-answer span {
   font-weight: 700;
@@ -349,10 +350,13 @@ p {
     display: none;
   }
 }
-.section-card .options .option:nth-child(1) {
+/* .section-card .options .option:nth-child(2) {
+  background-image: url("/bg-experience1.png");
+}
+.section-card .options .option:nth-child(6) {
   background-image: url("/developpeur-image-2023.jpg");
 }
-.section-card .options .option:nth-child(2) {
+.section-card .options .option:nth-child(1) {
   background-image: url("/developpeur-image-2022.jpg");
 }
 .section-card .options .option:nth-child(3) {
@@ -364,33 +368,37 @@ p {
 .section-card .options .option:nth-child(5) {
   background-image: url("/developpeur-image-2019.jpg");
 }
-.section-card .options .option:nth-child(6) {
+.section-card .options .option:nth-child(7) {
   background-image: url("/developpeur-image-2018.jpg");
-}
-.section-card .options .active.option:nth-child(1) {
+} */
+.section-card .options .option:nth-child(1) {
   background-image: url("/bg-experience6.png");
 }
-.section-card .options .active.option:nth-child(2) {
+.section-card .options .option:nth-child(2) {
   background-image: url("/bg-experience1.png");
 }
-.section-card .options .active.option:nth-child(3) {
+.section-card .options .option:nth-child(3) {
   background-image: url("/bg-experience3.png");
 }
-.section-card .options .active.option:nth-child(4) {
-  background-image: url("/bg-experience4.png");
+.section-card .options .option:nth-child(4) {
+  background-image: url("/bg-animated-dev.jpeg");
 }
-.section-card .options .active.option:nth-child(5) {
+.section-card .options .option:nth-child(7) {
   background-image: url("/bg-experience5.png");
 }
-.section-card .options .active.option:nth-child(6) {
+.section-card .options .option:nth-child(6) {
   background-image: url("/bg-experience2.png");
 }
+.section-card .options .option:nth-child(5) {
+  background-image: url("/pcIa.jpg");
+}
+
 .section-card .options .option {
   position: relative;
   overflow: hidden;
   min-width: 60px;
   margin: 10px;
-  background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
   background-size: auto 120%;
   background-position: center;
   cursor: pointer;
@@ -408,7 +416,8 @@ p {
   }*/
 }
 .section-card .options .option.active .shadow {
-  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  box-shadow: inset 0 -120px 120px -120px black,
+    inset 0 -120px 120px -100px black;
 }
 .section-card .options .option.active .label {
   z-index: 20;
@@ -451,7 +460,7 @@ p {
   transition: all 0.5s;
 }
 .section-card .options .option .label .icon {
-  box-shadow: 0px 0px 10px #C2AFF0;
+  box-shadow: 0px 0px 10px #c2aff0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -515,7 +524,7 @@ p {
 .skills .wrapper .text-container .background-txt {
   position: absolute;
   bottom: -80%;
-  color: #C2AFF0;
+  color: #c2aff0;
   opacity: 0.08;
 }
 
@@ -678,7 +687,8 @@ p {
   left: 0;
   z-index: 1;
 }
-.skills .wrapper-cards .progress .left, .skills .wrapper-cards .progress .right {
+.skills .wrapper-cards .progress .left,
+.skills .wrapper-cards .progress .right {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -802,7 +812,7 @@ p {
 .text-container .background-txt {
   position: absolute;
   bottom: -80%;
-  color: #C2AFF0;
+  color: #c2aff0;
   opacity: 0.08;
 }
 
@@ -810,9 +820,10 @@ p {
   opacity: 0.2 !important;
 }
 .light-mode .skills .wrapper-cards .card {
-  background-color: #BCCCDC;
+  background-color: #bcccdc;
 }
-.light-mode .skills .wrapper-cards .progress .left, .light-mode .skills .wrapper-cards .progress .right {
+.light-mode .skills .wrapper-cards .progress .left,
+.light-mode .skills .wrapper-cards .progress .right {
   border-color: #c2aff0;
 }
 
@@ -915,7 +926,8 @@ p {
   }
 }
 @media (min-width: 992px) {
-  .wrapper, .section-card {
+  .wrapper,
+  .section-card {
     max-height: 100vh;
   }
   .section {
@@ -942,7 +954,7 @@ p {
   .faqs-grid .faqs-title {
     display: flex;
     position: relative;
-    color: #D9E2EC;
+    color: #d9e2ec;
     font-size: 1.1rem;
     font-weight: 700;
     text-decoration: none;
@@ -958,7 +970,7 @@ p {
   }
   .faqs-grid .faqs-title:after {
     content: "+";
-    color: #D9E2EC;
+    color: #d9e2ec;
     font-weight: normal;
     float: right;
     margin-left: auto;
@@ -1037,10 +1049,10 @@ div.popup-content {
   justify-content: center;
 }
 div.popup-content .small-txt {
-  color: #BCCCDC;
+  color: #bcccdc;
 }
 div.popup-content input {
-  color: #BCCCDC;
+  color: #bcccdc;
 }
 
 .modal {
@@ -1062,23 +1074,24 @@ datalist {
 }
 
 option {
-  background-color: #1B2A36;
+  background-color: #1b2a36;
   padding: 6px 13px;
-  color: #D9E2EC;
+  color: #d9e2ec;
   font-size: 15px;
   cursor: pointer;
-  border-bottom: 1px solid #293F51;
+  border-bottom: 1px solid #293f51;
 }
 
-option:hover, .active {
-  background-color: #293F51;
+option:hover,
+.active {
+  background-color: #293f51;
 }
 
 #idtooltiptext {
   visibility: hidden;
   width: fit-content;
-  background-color: #D9E2EC;
-  color: #102A43;
+  background-color: #d9e2ec;
+  color: #102a43;
   text-align: center;
   border-radius: 6px;
   padding: 8px 30px;
@@ -1117,11 +1130,11 @@ option:hover, .active {
   grid-template-columns: 400px 1fr;
 }
 
-.wrapper-altern:nth-child(2n+1) {
+.wrapper-altern:nth-child(2n + 1) {
   grid-template-columns: 1fr 400px;
 }
 @media (min-width: 767px) {
-  .wrapper-altern:nth-child(2n+1) div.text-container-projet {
+  .wrapper-altern:nth-child(2n + 1) div.text-container-projet {
     order: 2;
   }
 }
@@ -1155,14 +1168,14 @@ option:hover, .active {
   display: none;
 }
 #wrapperIdProjet .text-container-projet h3 {
-  color: #9FB3C8;
+  color: #9fb3c8;
 }
 #wrapperIdProjet .text-container-projet h2 {
   margin-bottom: 10px;
 }
 #wrapperIdProjet .text-container-projet p {
   line-height: 22px;
-  color: #BCCCDC;
+  color: #bcccdc;
 }
 #wrapperIdProjet .text-container-projet .container-link {
   margin-top: 37px;
@@ -1175,8 +1188,8 @@ option:hover, .active {
   position: absolute;
   top: calc(50% - 60px);
   left: calc(50% - 60px);
-  border: 16px solid #243B54;
-  border-top: 16px solid #9FB3C8;
+  border: 16px solid #243b54;
+  border-top: 16px solid #9fb3c8;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -1227,7 +1240,7 @@ option:hover, .active {
 }
 
 #btnHome {
-  color: #C2AFF0;
+  color: #c2aff0;
   position: fixed;
   top: 30px;
   left: 30px;
@@ -1241,7 +1254,8 @@ option:hover, .active {
 }
 
 @media (max-width: 825px) {
-  .navbar, #btnHome {
+  .navbar,
+  #btnHome {
     display: none;
   }
   .navbarMobile {
