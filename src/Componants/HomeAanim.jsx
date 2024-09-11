@@ -104,13 +104,27 @@ export default function HomeAnim() {
 
   const [faqs, setFaqs] = useState([
     {
+      question: "2024",
+      answer: `J'ai mon diplôme niveau bac+3, et j'ai commencé à réaliser des projets
+  professionnels pour des clients. J'ai développé une
+  application en React Native et Node.js, déjà publiée
+  sur AWS, bien qu'elle ne soit pas accessible à tout le
+  monde. J'ai réalisé ce projet seul, en partant des
+  besoins du client. `,
+      answer2: `  Et depuis quelques temps, je travaille sur un projet
+  professionnel d'envergure en Next.js. Pour l'instant
+  je ne peux pas en dire plus 🤐.`,
+      answer3: `j'ai aussi réalisé un projet en react native en cours`,
+      open: true,
+    },
+    {
       question: "2023",
       answer: `Je fais ma dernière année en alternance, si tout ce passe bien, je décroche mon diplôme niveau bac +4`,
       answer2: `J'ai déjà pu réaliser ce site, fais en React et avec
                         Firebase pour la base de données présente dans la page
                         "Projets".`,
       answer3: `j'ai aussi réalisé un projet en react native en cours`,
-      open: true,
+      open: false,
     },
     {
       question: "2022",
