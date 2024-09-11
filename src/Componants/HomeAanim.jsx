@@ -104,13 +104,27 @@ export default function HomeAnim() {
 
   const [faqs, setFaqs] = useState([
     {
+      question: "2024",
+      answer: `J'ai mon diplôme niveau bac+3, et j'ai commencé à réaliser des projets
+  professionnels pour des clients. J'ai développé une
+  application en React Native et Node.js, déjà publiée
+  sur AWS, bien qu'elle ne soit pas accessible à tout le
+  monde. J'ai réalisé ce projet seul, en partant des
+  besoins du client. `,
+      answer2: `  Et depuis quelques temps, je travaille sur un projet
+  professionnel d'envergure en Next.js. Pour l'instant
+  je ne peux pas en dire plus 🤐.`,
+      answer3: `j'ai aussi réalisé un projet en react native en cours`,
+      open: true,
+    },
+    {
       question: "2023",
       answer: `Je fais ma dernière année en alternance, si tout ce passe bien, je décroche mon diplôme niveau bac +4`,
       answer2: `J'ai déjà pu réaliser ce site, fais en React et avec
                         Firebase pour la base de données présente dans la page
                         "Projets".`,
       answer3: `j'ai aussi réalisé un projet en react native en cours`,
-      open: true,
+      open: false,
     },
     {
       question: "2022",
@@ -290,19 +304,49 @@ export default function HomeAnim() {
                   <div className="shadow"></div>
                   <div className="label">
                     <div className="icon">
+                      <span className=" txt-black">2024</span>
+                    </div>
+                    <div className="info">
+                      <div className="main">Freelance</div>
+                      <div className="sub">
+                        <p>
+                          En 2024, j'ai commencé à réaliser des projets
+                          professionnels pour des clients. J'ai développé une
+                          application en React Native et Node.js, déjà publiée
+                          sur AWS, bien qu'elle ne soit pas accessible à tout le
+                          monde. J'ai réalisé ce projet seul, en partant des
+                          besoins du client.
+                          <br />
+                          <br />
+                          Et quelques temps, je travaille sur un projet
+                          professionnel d'envergure en Next.js. Pour l'instant
+                          je ne peux pas en dire plus 🤐.
+                          <br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="option">
+                  <div className="shadow"></div>
+                  <div className="label">
+                    <div className="icon">
                       <span className=" txt-black">2023</span>
                     </div>
                     <div className="info">
                       <div className="main">Alternance</div>
                       <div className="sub">
                         <p>
-                          Bon pour l'instant cette partie n'est pas très
-                          remplie, mais à la fin de l'année cette section
-                          débordera !
+                          J'ai travaillé sur un projet en Symfony avec plusieurs
+                          devs.
                           <br />
                           Cette année j'ai réalisé ce site, fais en React et
                           avec Firebase pour la base de données présente dans la
                           page "Projet".
+                          <br />
+                          J'ai pris un peu de temps pour travailler sur mes
+                          propres projets, en utilisant des stacks que je
+                          voulais perfectionner (Java, React, Node).
                           <br />
                           <span>
                             <br />À l'ecole:
@@ -311,6 +355,9 @@ export default function HomeAnim() {
                           Utilisation de firebase
                           <br />
                           Projet React Native
+                          <br />
+                          <br />
+                          Réalisation d'un projet de fin d'étude en Symfony
                           <br />
                         </p>
                       </div>
